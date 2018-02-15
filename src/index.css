@@ -1,0 +1,174 @@
+/*Mobile Styles*/
+@media only screen and (min-width: 300px) {
+body {
+  background: linear-gradient(#b53b03, #4c0b03);
+  margin: 0;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+html {
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-weight: lighter;
+  color: white;
+  font-size: 35px;
+  padding-top: 66px;
+}
+
+h1.title2 {
+  text-align: center;
+  font-weight: lighter;
+  color: white;
+  font-size: 30px;
+  padding-top: 66px;
+}
+
+h1.thanks {
+  text-align: center;
+  font-weight: lighter;
+  color: white;
+  font-size: 48px;
+  padding-top: 45%;
+}
+
+h2 {
+  text-align: center;
+  font-weight: lighter;
+  color: white;
+  font-size: 30px;
+  margin-top: 160px;
+}
+
+h2.sub-heading {
+  text-align: center;
+  font-weight: lighter;
+  color: white;
+  font-size: 20px;
+  margin-top: 5%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 17px;
+}
+
+.name {
+  width: 90%;
+  margin-left: 4%;
+  line-height: 20px;
+  margin-bottom: 4%;
+  font-size: 30px;
+}
+
+.age {
+  width: 90%;
+  margin-left: 4%;
+  line-height: 20px;
+  margin-bottom: 4%;
+  font-size: 30px;
+}
+
+.action {
+  width: 90%;
+  margin-left: 4%;
+  line-height: 20px;
+  margin-bottom: 4%;
+  padding-bottom: 120px;
+  font-size: 30px;
+}
+
+.select {
+  background-color: white;
+  margin-left: 4%;
+  width: 91.5%;
+  height: 44px;
+  border-radius: 0%;
+  margin-bottom: 4%;
+  font-size: 30px;
+}
+
+button.checkin {
+  background-color: white;
+  margin-left: 28%;
+  margin-top: 5%;
+  font-size: 30px;
+}
+
+button.report-it {
+  background-color: white;
+  margin-left: 15.7%;
+  margin-top: 95%;
+  font-size: 28px;
+}
+
+button.report {
+  background-color: white;
+  margin-left: 20.7%;
+  margin-top: 4%;
+  font-size: 28px;
+}
+
+.pulse {
+  margin: 100px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-left: 40%;
+  margin-top: 40%;
+  border-radius: 50%;
+  background: white;
+  opacity: 0.3;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+  animation: pulse 2s infinite;
+}
+
+.pulse:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 1rem rgba(255, 255, 255, .1), 0 0 0 2rem rgba(255, 255, 255, .15), 0 0 0 3rem rgba(255, 255, 255, .2);
+  }
+  50% {
+    box-shadow: 0 0 0 1.25rem rgba(255, 255, 255, .1), 0 0 0 2.75rem rgba(255, 255, 255, .1), 0 0 0 4rem rgba(255, 255, 255, 0);
+  }
+  75% {
+    box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, .1), 0 0 0 3rem rgba(255, 255, 255, 0), 0 0 0 5rem rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 1.75rem rgba(255, 255, 255, 0), 0 0 0 3.75rem rgba(255, 255, 255, 0), 0 0 0 6rem rgba(255, 255, 255, 0);
+  }
+}
+}
+
+/*Tablet Styles*/
+
+@media only screen and (min-width: 768px) and (min-width: 1024px) {
+  h2 {
+    margin-top: 20%;
+  }
+  .pulse {
+    margin-left: 46%;
+    margin-top: 21%;
+  }
+}
+
+/*Desktop Styles*/
+
+@media only screen and (min-width: 1240px) {
+  h2 {
+    margin-top: 23%;
+  }
+  .pulse {
+    margin-left: 46%;
+    margin-top: 25%;
+  }
+}
