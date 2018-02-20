@@ -127,13 +127,11 @@ import {
       </select>
       <input className="action" type="text" placeholder="Action Taken"></input>
       </form>
-      <a href="/thank-you"><button className="report">Submit Report</button></a>
+      <a href="/encounters"><button className="report">Submit Report</button></a>
       </div>
     );
   }
 }
-      /*Thank you page*/
-      const ThankYou = () =><h1 className="thanks">Thank You For Keeping Mars Safe From Aliens!</h1>;
 
       /*Error page*/
       const NotFound = () => <h1>404: Page Not Found</h1>;
@@ -149,7 +147,6 @@ import {
           <Route path="/check-in" component={CheckIn} />
           <Route path="/encounters" component={Encounters} />
           <Route path="/report" component={Report} />
-          <Route path="/thank-you" component={ThankYou} />
           <Route component={NotFound} />
           </Switch>
         </div>
