@@ -1,3 +1,5 @@
+/*Make the information appear on the Page*/
+/*Import all plugins and files needed*/
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -11,6 +13,7 @@ import {
   Redirect
 } from 'react-router-dom';
 
+      /*Mars Colony Home page*/
       const Home = () =>
       <div>
       <h1>MARS COLONY</h1>
@@ -20,10 +23,7 @@ import {
       <h2>Tap circle to enter</h2>
       </div>;
 
-      /*
-      1. Make the information appear on the Page
-      */
-
+      /*Jobs API on page*/
       class CheckIn extends Component {
         constructor() {
           super();
@@ -42,6 +42,7 @@ import {
         }
         render() {
           return (
+      /*Register page*/
       <div>
       <h1>REGISTER</h1>
       <form>
@@ -60,25 +61,26 @@ import {
   }
 }
 
-
-class Encounters extends Component {
-  constructor() {
-    super();
-    this.state = {
-      loading: true,
-      encounters: []
-    };
-  }
-  componentDidMount() {
-    axios.get('https://red-wdp-api.herokuapp.com/api/mars/encounters')
-      .then(encounters => {
-        this.setState({
-          encounters: encounters.data.encounters
-        });
-      });
-  }
-  render() {
-    return (
+    /*Encounters API on page*/
+      class Encounters extends Component {
+        constructor() {
+          super();
+          this.state = {
+            loading: true,
+            encounters: []
+          };
+        }
+        componentDidMount() {
+          axios.get('https://red-wdp-api.herokuapp.com/api/mars/encounters')
+          .then(encounters => {
+            this.setState({
+              encounters: encounters.data.encounters
+            });
+          });
+        }
+        render() {
+          return (
+      /*Recent Enocunters page*/
       <div>
       <h1 className="title2">RECENT ENCOUNTERS</h1>
       <h2 className="sub-heading">See an Alien? Report it!</h2>
@@ -93,7 +95,7 @@ class Encounters extends Component {
   }
 }
 
-
+      /*Aliens API on page*/
       class Report extends Component {
         constructor() {
           super();
@@ -112,6 +114,7 @@ class Encounters extends Component {
         }
         render() {
           return (
+      /*Report Encounters page*/
       <div>
       <h1 className="title2">REPORT ENCOUNTERS</h1>
       <h2 className="sub-heading">Safety on Mars is your responsibility</h2>
@@ -129,14 +132,16 @@ class Encounters extends Component {
     );
   }
 }
-
+      /*Thank you page*/
       const ThankYou = () =><h1 className="thanks">Thank You For Keeping Mars Safe From Aliens!</h1>;
 
+      /*Error page*/
       const NotFound = () => <h1>404: Page Not Found</h1>;
 
-class App extends Component {
-  render() {
-    return (
+      class App extends Component {
+        render() {
+          return (
+      /*Make routes for the links of the pages that will appear on the page*/
       <Router>
         <div>
         <Switch>
