@@ -1,4 +1,4 @@
-# Project 4: Mars Colony
+# Project 5: Mars Colony
 
 My project was to create a functional Mars Colony App using The Mars Colony API to get the alien types, colonist jobs and encounters reported live on a page using React, HTML and CSS.
 
