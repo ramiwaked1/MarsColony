@@ -1,4 +1,6 @@
 # Project 5: Mars Colony
+![alt text](https://github.com/ramiwaked1/MarsColony/blob/master/check-in.png)
+![alt text](https://github.com/ramiwaked1/MarsColony/blob/master/encounters.png)
 
 My project was to create a functional Mars Colony App using The Mars Colony API to get the alien types, colonist jobs and encounters reported live on a page using React, HTML and CSS.
 
@@ -8,6 +10,41 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+
+### Functional requirements:
+
+* Implement GET and POST HTTP requests using Axios to:
+* Save a new Colonist’s information
+* Save a new Alien encounter
+* Fetch a list of recent Alien encounters
+* Create a new Encounter Report
+
+### General requirements:
+
+Your project must:
+
+* Create aesthetically-relevant styles to build out a “Mars” theme for the app (have fun with this!)
+* Demonstrate effective organization of the project’s root directory
+* Have a Git repository initialized in its root directory with an appropriately customized .gitignore file
+* Be pushed to GitHub (with all of your commits synced to it)
+* Contain a README.md file describing the project (e.g. technologies used, personal learnings, etc.)
+
+### React requirements:
+
+Your project must:
+- Implement React Router
+- Contain routes for all the views
+- Implement appropriate user feedback when a component is loading
+- Utilize stateful/stateless components
+
+### CSS requirements:
+
+Your project must:
+
+* Make appropriate use of classes and IDs as selectors
+* Use a CSS reset
+* Implement a mobile-first responsive layout using Flexbox
+* Incorporate styles elements (including SCSS variables and mixins) into a theme.scss file
 
 ## Table of Contents
 
